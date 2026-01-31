@@ -1,0 +1,58 @@
+{
+  "name": "Ocompress",
+  "private": true,
+  "version": "0.8.0",
+  "description": "File compression and conversion tool for images and more",
+  "homepage": "https://github.com/meowtec/Imagine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meowtec/Imagine.git"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint --ext .js,.ts,.svelte modules",
+    "dev:vite": "vite",
+    "build:vite": "vite build",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "test": "npm run lint && vitest run"
+  },
+  "author": "meowtec<bertonzh@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@floating-ui/dom": "^1.6.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/lodash": "^4.14.168",
+    "@types/pixelmatch": "^5.2.2",
+    "@types/uuid": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "classnames": "^2.2.6",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-svelte": "^2.35.0",
+    "pixelmatch": "^5.2.1",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "svg-sprite-loader": "^6.0.11",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vite-plugin-svg-sprite": "^0.5.0",
+    "vitest": "^0.34.0"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-dialog": "^2.0.0",
+    "@tauri-apps/plugin-fs": "^2.0.0",
+    "@tauri-apps/plugin-shell": "^2.0.0",
+    "lodash": "^4.17.21",
+    "tslib": "^2.1.0"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Ocompress",
+  "version": "0.8.0",
+  "identifier": "com.ocompress.app",
+  "build": {
+    "beforeDevCommand": "npm run dev:vite",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "npm run build:vite",
+    "frontendDist": "../dist/web"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Ocompress",
+        "width": 834,
+        "height": 600,
+        "minWidth": 540,
+        "minHeight": 400,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": ["**"]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": [
+      "bin"
+    ],
+    "category": "Graphics and Design",
+    "shortDescription": "File compression and conversion tool",
+    "longDescription": "A desktop app for compressing and converting images and other file types",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    },
+    "fileAssociations": [
+      {
+        "ext": ["png"],
+        "mimeType": "image/png",
+        "role": "Editor"
+      },
+      {
+        "ext": ["jpg", "jpeg"],
+        "mimeType": "image/jpeg",
+        "role": "Editor"
+      }
+    ]
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "",
+      "endpoints": []
+    }
+  }
+}

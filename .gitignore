@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+lib/
+es/
+
+# Rust/Tauri build artifacts
+src-tauri/target/
+
+# Debug logs
+npm-debug*
+yarn-debug*
+yarn-error*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code
+.claude/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test coverage
+coverage/
+
+# Tauri development
+src-tauri/WixTools/
+src-tauri/NSIS/
